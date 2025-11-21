@@ -35,9 +35,9 @@
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" placeholder="Enter your password" required>
                 </div>
-                <button type="submit" class="btn">Login</button>
+                <button type="submit" class="btn">LOGIN</button>
                 <div class="forgot-password">
-                    <span>You don't have an account <a href="register">Sign up</a></span>
+                    <span text="bold">You don't have an account <a href="register">SIGN UP</a></span>
                 </div>
             </form>
         </div>
