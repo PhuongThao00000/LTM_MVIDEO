@@ -37,7 +37,7 @@ public class RegisterServlet extends HttpServlet {
 			return;
 		}
 		if(userBO.getUserByEmail(request.getParameter("email"))!=null){
-			request.setAttribute("errorMsg", "Email đã tồn tại!");
+			request.setAttribute("errorMsg", "Email already exists!");
 			RequestDispatcher dispathcer=request.getServletContext().getRequestDispatcher("/Register.jsp");
 			dispathcer.forward(request, response);
 			return;

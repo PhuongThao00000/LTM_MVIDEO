@@ -8,7 +8,7 @@ import model.bean.MergeVideoHandler;
 
 public class MergeVideoMangerBO {
 	public HashMap<Integer, MergeVideoHandler> progressManagerMap = new HashMap<Integer, MergeVideoHandler>();
-	private ExecutorService executorService=Executors.newFixedThreadPool(10);
+	private ExecutorService executorService=Executors.newFixedThreadPool(5);
 	private int nextID = -1;
 	private static MergeVideoMangerBO instance;
 	
@@ -25,7 +25,7 @@ public class MergeVideoMangerBO {
 		}
 		return instance;
 	}
-	
+
 	public void postTask(String userID, int pID) {
 		MergeVideoHandler handler = new MergeVideoHandler(userID, pID);
 		progressManagerMap.put(pID, handler);

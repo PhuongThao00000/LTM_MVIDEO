@@ -11,12 +11,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.tomcat.util.http.fileupload.FileUtils;
+// import org.apache.commons.io.FileUtils;
 
 import model.BO.VideoBO;
 
 public class UpVideoToHDHandler implements Runnable {
 
-	private static final String ffmpegPath = "D:\\Download\\ffmpeg-7.1-full_build\\ffmpeg-7.1-full_build\\bin\\ffmpeg.exe";
+	private static final String ffmpegPath = "C:\\Users\\ADMIN\\Downloads\\ffmpeg-7.1.1-full_build\\ffmpeg-7.1.1-full_build\\bin\\ffmpeg.exe";
 	private static final String rootFolder = "D:\\SourceVideo";
 	private String inFilePath, outFilePath;
 	private double status;

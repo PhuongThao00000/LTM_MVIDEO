@@ -35,7 +35,7 @@
 	       		}
 	       	});
 	        for (Video vi:listVideo){
-				if (vi.getStatus().equals("Dang xu ly")){
+				if (vi.getStatus().equals("Processing...")){
 			%>
 				<div id = "<%=vi.getIdVideo() %>"  class="video uncomplete">
                 	<h3><%=vi.getNameVideo() %>.mp4</h3>

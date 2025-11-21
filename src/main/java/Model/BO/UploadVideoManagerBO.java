@@ -17,7 +17,7 @@ import javax.swing.plaf.ProgressBarUI;
 
 public class UploadVideoManagerBO {
 	private static UploadVideoManagerBO instance = null;
-	private ExecutorService executorService=Executors.newFixedThreadPool(10);
+	private ExecutorService executorService=Executors.newFixedThreadPool(5);
     public Map<String, Integer[]> progressMap = new ConcurrentHashMap<String, Integer[]>();
     private static Object key = new Object();
     private static Object key_input = new Object();

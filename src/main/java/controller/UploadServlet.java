@@ -68,7 +68,7 @@ public class UploadServlet extends HttpServlet {
 		int pID = MergeVideoMangerBO.getInstance().getNextID();
 		String nameVideo = request.getParameter("nameVideo");
 		String outputFilePath = rootFolder+File.separator+userID+File.separator+pID+File.separator+"output"+File.separator+nameVideo+".mp4";
-		new VideoBO().createVideo(new Video(pID, nameVideo, userID, outputFilePath, "Dang xu ly"));
+		new VideoBO().createVideo(new Video(pID, nameVideo, userID, outputFilePath, "Processing…"));
 		
 		request.getSession().setAttribute("pID", pID);
 		String upFolder = rootFolder+File.separator+userID+File.separator+pID+File.separator+"upload";

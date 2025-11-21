@@ -2,11 +2,12 @@ package model.DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.Statement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.mysql.jdbc.Statement;
+// import com.mysql.cj.jdbc.Statement;
 
 import model.bean.Video;
 import utils.DBConnection;

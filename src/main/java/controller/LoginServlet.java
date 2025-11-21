@@ -36,7 +36,7 @@ public class LoginServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		User user=userBO.getUser(request.getParameter("email"), request.getParameter("password"));
 		if(user==null) {
-			request.setAttribute("errorMsg", "Email hoặc mật khẩu không chính xác!");
+			request.setAttribute("errorMsg", "Incorrect email or password.");
 			RequestDispatcher dispathcer=request.getServletContext().getRequestDispatcher("/Login.jsp");
 			dispathcer.forward(request, response);
 			return;
