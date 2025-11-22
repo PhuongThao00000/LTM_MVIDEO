@@ -21,7 +21,8 @@ import java.io.PrintWriter;
 @WebServlet("/UploadServlet/*")
 @MultipartConfig(location = "D:\\SourceVideo\\temp",
 				 fileSizeThreshold=1024*1024*1000, 	// 500 MB dung luong buffer cho phep truoc khi luu
-				 maxFileSize=1024*1024*1024)         // 1000MB dung luong 1 file         
+				 maxFileSize=1024*1024*1024)         // 1000MB dung luong 1 file  
+		        
 public class UploadServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     private static final String rootFolder = "D:\\SourceVideo";
